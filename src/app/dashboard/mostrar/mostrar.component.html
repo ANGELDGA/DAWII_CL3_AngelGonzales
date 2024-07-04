@@ -1,0 +1,10 @@
+<h1 class="fw-bold text-center my-3">Episodios con el ID impar</h1>
+@if (episodes.length > 0) {
+    <div class="container">
+        <ul class="list-group">
+            @for (episode of episodes; track episode.id) {
+                <li class="list-group-item">{{ episode.name }}</li>
+            }
+        </ul>
+    </div>
+}
